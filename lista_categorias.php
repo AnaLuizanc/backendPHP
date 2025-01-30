@@ -47,23 +47,29 @@ if (!isset($_SESSION['usuario'])) {
                     <tr>
                         <td><?php echo $categoria ?></td>
                         <td><?php echo $estilo ?></td>
-                    <?php } ?>
+                        <td>
+                            
+                        </td>
                     </tr>
+                    <?php } ?>
         </table>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script> -->
     
-    <!-- <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" charset="utf8" src="js/jquery.dataTables.js"></script> -->
+    <script type="text/javascript" charset="utf8" src="js/jquery.dataTables.js"></script>
 
     <script>
         $(document).ready(function (){
             $('#table_id').DataTable({
-                
+                "pageLenght":25,
+                "language": {
+                    "lenghtMenu":
+                }
             });
         });
     </script>
