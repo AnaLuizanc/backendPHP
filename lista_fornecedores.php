@@ -70,9 +70,20 @@ if (!isset($_SESSION['usuario'])) {
     <script>
         $(document).ready(function (){
             $('#table_id').DataTable({
-                "pageLenght":25,
                 "language": {
-                    "lenghtMenu":
+                    "lengthMenu": "Mostrando _MENU_ registros por página",
+                    "zeroRecords": "Nada encontrado",
+                    "info": "Mostrando _PAGE_ de _PAGES_",
+                    "infoEmpty": "Nenhum registro encontrado",
+                    "infoFiltered": "(Filtrado de _MAX_ registros totais)",
+                    "search": "Pesquisar:",
+                    "paginate": {
+                        "first": "Primeira",
+                        "last": "&Uacute;ltima",
+                        "next": "Pr&oacute;xima",
+                        "previous": "Anterior"
+                    },
+                    "infoFiltered": "(Filtrado de _MAX_ registros no total)"
                 }
             });
         });
